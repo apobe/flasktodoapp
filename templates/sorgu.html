@@ -9,7 +9,7 @@
 </head>
 <body>
     <div style = "margin-top: 100px;" class = "container">
-    <h3>Sorgu Paneli</h3>
+    <h3>kişi sorgusu</h3>
     <hr>
         {% if database1==[] %}
         <div class="alert alert-danger" role ="start">Herhangibi Veri Bulunmuyor</div>
@@ -21,7 +21,7 @@
               <th scope="col">id</th>
               <th scope="col">Ad</th>
               <th scope="col">Soyad</th>
-              <th scope="col">T.C</th>
+              <th scope="col">numara</th>
               <th scope="col">Veriyi Sil</th>
             </tr>
           </thead>
@@ -31,7 +31,7 @@
                 <th scope="row">{{database4.id}}</th>
                 <td>{{database4.title}}</td>
                 <td>{{database4.soyad}}</td>
-                <td>{{database4.tc}}</td>
+                <td>{{database4.numara}}</td>
               </tr>
               {% endfor %}
           <tbody>
